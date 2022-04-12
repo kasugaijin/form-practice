@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
-html {
+html, body {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: 'Montserrat', sans-serif;
   color: rgb(50, 51, 52);
   background-color: rgb(216, 214, 237);
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   text-align: center;
   font-family: cursive;
   font-size: 50px;
-  margin-bottom: 0.5;
+  margin: 0;
+  margin-top: 35px;
 }
 
 .container {
@@ -52,6 +57,19 @@ legend {
 
 form {
   width: 20em;
+}
+
+input {
+  border-radius: 3px;
+}
+
+/* These two selectors change input field border colour depending on validity*/
+input:invalid {
+  border-color: rgb(218, 90, 90);
+}
+
+input:valid {
+  border-color: rgb(116, 177, 116);
 }
 
 fieldset {
@@ -90,4 +108,11 @@ fieldset {
 button, input, select {
   font-family: inherit;
   font-size: 90%;
+}
+
+#footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

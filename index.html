@@ -18,7 +18,7 @@
         <legend class="room-legend">Room Type</legend>
         <ul>
           <li>
-            <input type="radio" name="room" id="Ace" value="A"></input>
+            <input type="radio" name="room" id="Ace" value="A" required></input>
             <label for="Ace">Ace</label>
           </li>
           <li>
@@ -36,7 +36,7 @@
       <label for="email">Email: *</label>
       <input type="text" id="email" required></input><br>
       <label for="promo">Promo code: </label>
-      <input type="text" id="promo"></input>
+      <input type="text" id="promo" minlength="5" maxlength="8"></input>
       
       <div class="payment-info">
         <h2>Payment Information</h2>
@@ -48,14 +48,18 @@
         </select><br>
         <label for="ccnum">Card number: *</label>
         <input type="tel" name="ccnum" id="ccnum" required
-        pattern="^([0-9]{16})$" placeholder="16 digits no spaces"> </input><br>
+        pattern="^[0-9]{16}$" placeholder="16 digits no spaces"
+        title="16 digits no spaces"> </input><br>
         <label for="ccexp">Expiration date: *</label>
         <input type="text" name="ccexp" id="ccexp" placeholder="MM/YY" required
-        pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"></input><br>
+        pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" title="two digit month / two digit year"></input><br>
         <button type="submit" id="button">Validate Payment</button>
       </div>
     </fieldset>
   </form>
+</div>
+<div id="footer">
+  <p>2022 Kasugaijin for <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></p>
 </div>
 </body>
 </html>
