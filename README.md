@@ -1,1 +1,2 @@
 # form-practice
+Forms are a very important component of any website as they allow the user to interact with the interface and either post or get information from the server. As such, this repository is my way of gaining an understanding of form inputs, how to validate data, and arrange form fields for user experience.

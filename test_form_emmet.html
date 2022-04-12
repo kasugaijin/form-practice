@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Emmet & Forms</title>
+</head>
+<body>
+<div>
+  <ul>
+    <li>Link 1</li>
+    <li>Link 2</li>
+    <li>Link 3</li>
+    <li>Link 4</li>
+    <li>Link 5</li>
+  </ul>
+
+  <!-- Form elements will be styled based on the default settings in the browser viewing the form
+  This can be over-written to customise things, and is easy for text inputs but gets harder for 
+radio buttons and checkboxes (need to review guides) and not possible for date pickers unless you
+build a custom one with js or use a ready-made one. -->
+<form action="" method="post">
+  <fieldset>
+    <legend>Fill out these fields</legend>
+    <div>
+      <!-- the label for attribute should = the input id. This will focus the input when the label is clicked -->
+      <label for="name">Enter your name: </label>
+      <input type="text" id="name" placeholder="First name" name="first_name" ></input>
+    </div>
+    <div>
+      <label for="email">Enter your email: </label>
+      <input type="email" id="email" placeholder="big@dodge.com">  </input>
+    </div>
+    <div>
+      <label for="password">Enter your password: </label>
+      <input type="password" id="password">  </input>
+    </div>
+    <div>
+      <label for="pin">Enter your pin: </label>
+      <input type="number" id="pin">  </input>
+    </div>
+    <div>
+      <label for="date">Registration date: </label>
+      <input type="date" id="date">  </input>
+    </div>
+    <div>
+      <label for="text-area">Write some stuff:</label><br>
+      <textarea name="" id="text-area" cols="30" rows="10">Enter your deepest thoughts here...</textarea>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Choose a drop down</legend>
+  <div>
+    <!-- use select, option where there is more than 5 selection criteria and only one is to be selected -->
+    <label for="option-list">Choose one:</label>
+    <select name="option" id="option-list">
+      <option value="option-1">option 1</option>
+      <option value="option-2">option 2</option>
+      <option value="option-3">option 3</option>
+      <option value="option-4" selected>option 4</option>
+      <option value="option-5">option 5</option>
+    </select>
+    </div>
+    
+    <div>
+    <!-- use optgroup tag to split up a dropdown list -->
+    <label for="option-list">Choose one:</label>
+      <select name="option" id="option-list">
+        <optgroup label="first few">
+          <option value="option-1">option 1</option>
+          <option value="option-2">option 2</option>
+        </optgroup>
+        <optgroup label="second few">
+          <option value="option-3">option 3</option>
+          <option value="option-4" selected>option 4</option>
+          <option value="option-5">option 5</option>
+        </optgroup>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Choose your radio button</legend>
+  <div>
+  <!-- radio buttons only allow one thing to be selected
+  The name attribute should be the same if you want only one button to be selected
+  Only use radio buttons if there are 5 or fewer options -->
+    <label for="option-1" id="radio">Test</label>
+    <input type="radio" id="option-1" name="test" value="test"></input>
+  </div>
+  <div>
+    <label for="option-1" id="radio">Testy</label>
+    <input type="radio" id="option-1" name="test" value="test" checked></input>
+  </div>
+  <div>
+    <label for="option-1" id="radio">Testycall</label>
+    <input type="radio" id="option-1" name="test" value="test"></input>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Choose one or more boxes</legend>
+  <!-- checkboxes allow multiple things to be selected at once -->
+  <div>
+    <label for="option-1" id="radio">Test</label>
+    <input type="checkbox" id="option-1" name="test" value="test">  </input>
+  </div>
+  <div>
+    <label for="option-1" id="radio">Test</label>
+    <input type="checkbox" id="option-1" name="test" value="test" checked>  </input>
+  </div>
+  <div>
+    <label for="option-1" id="radio">Test</label>
+    <input type="checkbox" id="option-1" name="test" value="test">  </input>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Choose your button</legend>
+  <!-- three types of buttons
+   submit button will submit the information for the form tags it resides within
+   reset will reset the form
+   generic buttons are used to make interactive interfaces eg. with js
+  -->
+   <button type="submit">I submit</button>
+   <button type="reset">I reset</button>
+   <button type="button">I am generic</button>
+</fieldset>
+
+<div>
+  <!-- use a single checkbox for user true/false e.g., opt in or out of a newsletter -->
+  <label for="newsletter">Check if you want to receive our newsletter</label>
+  <input type="checkbox" id="newsletter" name="newsletter"></input>
+</div>
+
+</form>
+
+</div>
+</body>
+</html>

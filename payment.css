@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(50, 51, 52);
+  background-color: rgb(216, 214, 237);
+}
+
+.container {
+  padding: 2em;
+  border-radius: 5px;
+  border-style: solid;
+  margin-top: 3em;
+  background-color: aliceblue;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+legend {
+  font-weight: bold;
+}
+
+#form-legend {
+  font-size: x-large;
+}
+
+form {
+  width: 22em;
+}
+
+fieldset {
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+#room, #name, #email, #promo, #card, #ccnum, 
+#ccexp {
+  margin-bottom: 10px;
+}
+
+#button {
+  margin-top: 5px;
+}

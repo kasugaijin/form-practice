@@ -1,0 +1,46 @@
+html {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20%;
+}
+
+fieldset {
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.name, .email, .message {
+  margin-bottom: 15px
+}
+
+#user-name, #user-email, #user-message {
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(183, 175, 175);
+}
+
+#button {
+  width: 75px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(183, 175, 175);
+  background-color: rgb(242, 204, 241);
+}
