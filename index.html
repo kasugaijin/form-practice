@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="./payment.css">
   <title>Payment Form</title>
 </head>
-<body>  
+<body> 
+  <h1>Fancy Pants Hotel</h1> 
 <div class="container">
   <form action="" method="post">
-    <fieldset>
-      <legend id="form-legend">Payment Form</legend>
+    <fieldset class="form-fieldset">
+      <legend id="form-legend">Booking Form</legend>
       <p>Required fields are followed by *.</p>
       <fieldset id="room">
-        <legend>Room Type</legend>
+        <legend class="room-legend">Room Type</legend>
         <ul>
           <li>
             <input type="radio" name="room" id="Ace" value="A"></input>
@@ -37,23 +38,22 @@
       <label for="promo">Promo code: </label>
       <input type="text" id="promo"></input>
       
-      <h2>Payment Information</h2>
-      <label for="card">Card type:</label>
-      <select name="card-type" id="card">
-        <option value="Visa">Visa</option>
-        <option value="Mastercard">Mastercard</option>
-        <option value="Amex">American Express</option>
-      </select><br>
-  
-      <label for="ccnum">Card number: *</label>
-      <input type="tel" name="ccnum" id="ccnum" required
-      pattern="^([0-9]{16})$" placeholder="16 digits no spaces"> </input><br>
-  
-      <label for="ccexp">Expiration date: *</label>
-      <input type="text" name="ccexp" id="ccexp" placeholder="MM/YY" required
-      pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"></input><br>
-  
-      <button type="submit" id="button">Validate Payment</button>
+      <div class="payment-info">
+        <h2>Payment Information</h2>
+        <label for="card">Card type:</label>
+        <select name="card-type" id="card">
+          <option value="Visa">Visa</option>
+          <option value="Mastercard">Mastercard</option>
+          <option value="Amex">American Express</option>
+        </select><br>
+        <label for="ccnum">Card number: *</label>
+        <input type="tel" name="ccnum" id="ccnum" required
+        pattern="^([0-9]{16})$" placeholder="16 digits no spaces"> </input><br>
+        <label for="ccexp">Expiration date: *</label>
+        <input type="text" name="ccexp" id="ccexp" placeholder="MM/YY" required
+        pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"></input><br>
+        <button type="submit" id="button">Validate Payment</button>
+      </div>
     </fieldset>
   </form>
 </div>
